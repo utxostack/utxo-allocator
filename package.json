@@ -1,0 +1,26 @@
+{
+  "name": "utxo-allocator",
+  "version": "1.0.0",
+  "description": "For bulk distribution of utxo",
+  "scripts": {
+    "format": "prettier --write '**/*.{js,ts}'",
+    "lint": "tsc && eslint . && prettier --check '**/*.{js,ts}'",
+    "lint:fix": "tsc && eslint --fix --ext .js,.ts . && prettier --write '**/*.{js,ts}'",
+    "prepare-utxo": "ts-node src/prepare-utxo.ts"
+  },
+  "dependencies": {
+    "@nervosnetwork/ckb-sdk-utils": "0.109.3",
+    "@rgbpp-sdk/btc": "^0.6.0",
+    "@rgbpp-sdk/ckb": "^0.6.0",
+    "zx": "^8.0.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^22.7.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
